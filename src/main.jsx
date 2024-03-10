@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import 'bulma/css/bulma.min.css';
+import './styles.css';
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import { Provider } from "react-redux";
+import { store } from "./store";
+const el = document.getElementById("root");
+const root = createRoot(el);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+root.render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-)
+  </Provider>
+);
