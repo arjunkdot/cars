@@ -1,4 +1,6 @@
 import React from "react";
+import 'bulma/css/bulma.min.css';
+import './styles.css';
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { Provider } from "react-redux";

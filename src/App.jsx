@@ -6,10 +6,10 @@ import CarValue from "./components/CarValue";
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <CarForm />
-      <CarList />
       <CarSearch />
+      <CarList />
       <CarValue />
     </div>
   );
